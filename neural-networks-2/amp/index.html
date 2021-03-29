@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html ⚡>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <title>Artificial Neural Networks in Industry</title>
+
+    <link rel="canonical" href="../index.html" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    
+    <meta property="og:site_name" content="Sanatani" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Artificial Neural Networks in Industry" />
+    <meta property="og:description" content="The idea of Machine Learning had been around much before the world saw fifth generation of computers, and became public when Alan Turing made a game called the imitation game which is based on the original in which a man and a woman go into separate rooms and others try" />
+    <meta property="og:url" content="http://localhost:2368/neural-networks-2/" />
+    <meta property="og:image" content="https://static.ghost.org/v4.0.0/images/publication-cover.jpg" />
+    <meta property="article:published_time" content="2021-03-29T22:44:27.000Z" />
+    <meta property="article:modified_time" content="2021-03-29T22:44:27.000Z" />
+    <meta property="article:publisher" content="https://www.facebook.com/ghost" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Artificial Neural Networks in Industry" />
+    <meta name="twitter:description" content="The idea of Machine Learning had been around much before the world saw fifth generation of computers, and became public when Alan Turing made a game called the imitation game which is based on the original in which a man and a woman go into separate rooms and others try" />
+    <meta name="twitter:url" content="http://localhost:2368/neural-networks-2/" />
+    <meta name="twitter:image" content="https://static.ghost.org/v4.0.0/images/publication-cover.jpg" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Bhavesh Kakrotra" />
+    <meta name="twitter:site" content="@ghost" />
+    <meta property="og:image:width" content="7183" />
+    <meta property="og:image:height" content="2885" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Sanatani",
+        "url": "http://localhost:2368/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://localhost:2368/favicon.ico",
+            "width": 48,
+            "height": 48
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Bhavesh Kakrotra",
+        "url": "http://localhost:2368/author/bhavesh/",
+        "sameAs": []
+    },
+    "headline": "Artificial Neural Networks in Industry",
+    "url": "http://localhost:2368/neural-networks-2/",
+    "datePublished": "2021-03-29T22:44:27.000Z",
+    "dateModified": "2021-03-29T22:44:27.000Z",
+    "description": "The idea of Machine Learning had been around much before the world saw fifth\ngeneration of computers, and became public when Alan Turing made a game called\nthe imitation game which is based on the original in which a man and a woman go\ninto separate rooms and others try guess who is who by writing questions and\nreading the answers they sent back and both try to convince the guests that they\nare the other. \n\nTuring described his new version of the game as follows:\n\n&gt; We now ask the question, &quot;Wha",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://localhost:2368/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 4.1" />
+    <link rel="alternate" type="application/rss+xml" title="Sanatani" href="../../rss/index.html" />
+
+    <style amp-custom>
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    html {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        font-size: 62.5%;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    body {
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        color: #3a4145;
+        font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+        font-size: 1.7rem;
+        line-height: 1.55em;
+        font-weight: 400;
+        font-style: normal;
+        background: #fff;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    p,
+    ul,
+    ol,
+    li,
+    dl,
+    dd,
+    hr,
+    pre,
+    form,
+    table,
+    video,
+    figure,
+    figcaption,
+    blockquote {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul[class],
+    ol[class] {
+        padding: 0;
+        list-style: none;
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+    }
+
+    input,
+    button,
+    select,
+    textarea {
+        font: inherit;
+        -webkit-appearance: none;
+    }
+
+    fieldset {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    label {
+        display: block;
+        font-size: 0.9em;
+        font-weight: 700;
+    }
+
+    hr {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid currentcolor;
+        opacity: 0.1;
+    }
+
+    ::selection {
+        text-shadow: none;
+        background: #cbeafb;
+    }
+
+    mark {
+        background-color: #fdffb6;
+    }
+
+    small {
+        font-size: 80%;
+    }
+
+    sub,
+    sup {
+        position: relative;
+        font-size: 75%;
+        line-height: 0;
+        vertical-align: baseline;
+    }
+    sup {
+        top: -0.5em;
+    }
+    sub {
+        bottom: -0.25em;
+    }
+
+    ul li + li {
+        margin-top: 0.6em;
+    }
+
+    a {
+        color: var(--ghost-accent-color, #1292EE);
+        text-decoration-skip-ink: auto;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+        font-weight: 700;
+        color: #121212;
+        line-height: 1.4em;
+    }
+
+    h1 {
+        font-size: 3.4rem;
+        line-height: 1.1em;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+        line-height: 1.2em;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    h4 {
+        font-size: 1.7rem;
+    }
+
+    h5 {
+        font-size: 1.6rem;
+    }
+
+    h6 {
+        font-size: 1.6rem;
+    }
+
+    amp-img {
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    amp-img img {
+        object-fit: cover;
+    }
+
+    .page-header {
+        padding: 50px 5vmin 30px;
+        text-align: center;
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .page-header a {
+        color: #121212;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 1.6rem;
+        letter-spacing: -0.1px;
+    }
+
+    .post {
+        max-width: 680px;
+        margin: 0 auto;
+    }
+
+    .post-header {
+        margin: 0 5vmin 5vmin;
+        text-align: center;
+    }
+
+    .post-meta {
+        margin: 1rem 0 0 0;
+        text-transform: uppercase;
+        color: #738a94;
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+
+    .post-image {
+        margin: 0 0 5vmin;
+    }
+
+    .post-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .post-content {
+        padding: 0 5vmin;
+    }
+
+    .post-content > * + * {
+        margin-top: 1.5em;
+    }
+
+    .post-content [id]:not(:first-child) {
+        margin: 2em 0 0;
+    }
+
+    .post-content > [id] + * {
+        margin-top: 1rem;
+    }
+
+    .post-content [id] + .kg-card,
+    .post-content blockquote + .kg-card {
+        margin-top: 40px;
+    }
+
+    .post-content > ul,
+    .post-content > ol,
+    .post-content > dl {
+        padding-left: 1.9em;
+    }
+
+    .post-content hr {
+        margin-top: 40px;
+    }
+
+    .post .post-content hr + * {
+        margin-top: 40px;
+    }
+
+    .post-content amp-img {
+        background-color: #f8f8f8;
+    }
+
+    .post-content blockquote {
+        position: relative;
+        font-style: italic;
+    }
+
+    .post-content blockquote::before {
+        content: "";
+        position: absolute;
+        left: -1.5em;
+        top: 0;
+        bottom: 0;
+        width: 0.3rem;
+        background: var(--ghost-accent-color, #1292EE);
+    }
+
+    .post-content :not(.kg-card):not([id]) + .kg-card {
+        margin-top: 40px;
+    }
+
+    .post-content .kg-card + :not(.kg-card) {
+        margin-top: 40px;
+    }
+
+    .kg-card figcaption {
+        padding: 1.5rem 1.5rem 0;
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.3rem;
+        line-height: 1.4em;
+        opacity: 0.6;
+    }
+
+    .kg-card figcaption strong {
+        color: rgba(0,0,0,0.8);
+    }
+
+    .post-content :not(pre) code {
+        vertical-align: middle;
+        padding: 0.15em 0.4em 0.15em;
+        border: #e1eaef 1px solid;
+        font-weight: 400;
+        font-size: 0.9em;
+        line-height: 1em;
+        color: #15171a;
+        background: #f0f6f9;
+        border-radius: 0.25em;
+    }
+
+    .post-content > pre {
+        overflow: scroll;
+        padding: 16px 20px;
+        color: #fff;
+        background: #1F2428;
+        border-radius: 5px;
+        box-shadow: 0 2px 6px -2px rgba(0,0,0,.1), 0 0 1px rgba(0,0,0,.4);
+    }
+
+    .kg-embed-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .kg-image-card img {
+        margin: auto;
+    }
+
+    .kg-gallery-card + .kg-gallery-card {
+        margin-top: 0.75em;
+    }
+
+    .kg-gallery-container {
+        position: relative;
+    }
+
+    .kg-gallery-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .kg-gallery-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .kg-gallery-row:not(:first-of-type) {
+        margin: 0.75em 0 0 0;
+    }
+
+    .kg-gallery-image:not(:first-of-type) {
+        margin: 0 0 0 0.75em;
+    }
+
+    .kg-bookmark-card,
+    .kg-bookmark-publisher {
+        position: relative;
+    }
+
+    .kg-bookmark-container,
+    .kg-bookmark-container:hover {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        color: currentColor;
+        background: rgba(255,255,255,0.6);
+        font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+        text-decoration: none;
+        border-radius: 5px;
+        box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.1), 0 0 1px rgba(0, 0, 0, 0.4);
+        overflow: hidden;
+    }
+
+    .kg-bookmark-content {
+        flex-basis: 0;
+        flex-grow: 999;
+        padding: 20px;
+        order: 1;
+    }
+
+    .kg-bookmark-title {
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 1.3em;
+    }
+
+    .kg-bookmark-description {
+        display: -webkit-box;
+        max-height: 45px;
+        margin: 0.5em 0 0 0;
+        font-size: 1.4rem;
+        line-height: 1.55em;
+        overflow: hidden;
+        opacity: 0.8;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+    .kg-bookmark-metadata {
+        margin-top: 20px;
+    }
+
+    .kg-bookmark-metadata {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 1.3rem;
+        line-height: 1.3em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .kg-bookmark-description {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+    }
+
+    .kg-bookmark-metadata amp-img {
+        width: 18px;
+        height: 18px;
+        max-width: 18px;
+        max-height: 18px;
+        margin-right: 10px;
+    }
+
+    .kg-bookmark-thumbnail {
+        display: flex;
+        flex-basis: 20rem;
+        flex-grow: 1;
+        justify-content: flex-end;
+    }
+
+    .kg-bookmark-thumbnail amp-img {
+        max-height: 200px;
+    }
+
+    .kg-bookmark-author {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .kg-bookmark-publisher::before {
+        content: "•";
+        margin: 0 .5em;
+    }
+
+    .kg-width-full.kg-card-hascaption {
+        display: grid;
+        grid-template-columns: inherit;
+    }
+
+    .post-content table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .post-content th {
+        padding: 0.5em 0.8em;
+        text-align: left;
+        font-size: .75em;
+        text-transform: uppercase;
+    }
+
+    .post-content td {
+        padding: 0.4em 0.7em;
+    }
+
+    .post-content tbody tr:nth-child(2n + 1) {
+        background-color: rgba(0,0,0,0.1);
+        padding: 1px;
+    }
+
+    .post-content tbody tr:nth-child(2n + 2) td:last-child {
+        box-shadow:
+            inset 1px 0 rgba(0,0,0,0.1),
+            inset -1px 0 rgba(0,0,0,0.1);
+    }
+
+    .post-content tbody tr:nth-child(2n + 2) td {
+        box-shadow: inset 1px 0 rgba(0,0,0,0.1);
+    }
+
+    .post-content tbody tr:last-child {
+        border-bottom: 1px solid rgba(0,0,0,.1);
+    }
+
+    .page-footer {
+        padding: 60px 5vmin;
+        margin: 60px auto 0;
+        text-align: center;
+        background-color: #f8f8f8;
+    }
+
+    .page-footer h3 {
+        margin: 0.5rem 0 0 0;
+    }
+
+    .page-footer p {
+        max-width: 500px;
+        margin: 1rem auto 1.5rem;
+        font-size: 1.7rem;
+        line-height: 1.5em;
+        color: rgba(0,0,0,0.6)
+    }
+
+    .powered {
+        display: inline-flex;
+        align-items: center;
+        margin: 30px 0 0;
+        padding: 6px 9px 6px 6px;
+        border: rgba(0,0,0,0.1) 1px solid;
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: -0.2px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+        font-weight: 500;
+        color: #222;
+        text-decoration: none;
+        background: #fff;
+        border-radius: 6px;
+    }
+
+    .powered svg {
+        height: 16px;
+        width: 16px;
+        margin: 0 6px 0 0;
+    }
+
+    @media (max-width: 600px) {
+        body {
+            font-size: 1.6rem;
+        }
+        h1 {
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+        }
+    }
+
+    @media (max-width: 400px) {
+        h1 {
+            font-size: 2.6rem;
+            line-height: 1.15em;
+        }
+        h2 {
+            font-size: 2rem;
+            line-height: 1.2em;
+        }
+        h3 {
+            font-size: 1.7rem;
+        }
+    }
+
+    :root {--ghost-accent-color: #FF1A75;}
+    </style>
+
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+    
+
+</head>
+
+<body class="amp-template">
+    <header class="page-header">
+        <a href="../../index.html">
+                Sanatani
+        </a>
+    </header>
+
+    <main class="content" role="main">
+        <article class="post">
+
+            <header class="post-header">
+                <h1 class="post-title">Artificial Neural Networks in Industry</h1>
+                <section class="post-meta">
+                    Bhavesh Kakrotra -
+                    <time class="post-date" datetime="2021-03-29">29 Mar 2021</time>
+                </section>
+            </header>
+            <section class="post-content">
+
+                <p>The idea of Machine Learning had been around much before the world saw fifth generation of computers, and became public when Alan Turing made a game called the imitation game which is based on the original in which a man and a woman go into separate rooms and others try guess who is who by writing questions and reading the answers they sent back and both try to convince the guests that they are the other. </p><p>Turing described his new version of the game as follows:</p><blockquote>We now ask the question, "What will happen when a machine takes the part of A in this game?" Will the interrogator decide wrongly as often when the game is played like this as he does when the game is played between a man and a woman? These questions replace our original, "Can machines think?"</blockquote><figure class="kg-card kg-image-card"></figure><p>Although Machine Learning and Statistics have different purpose, traditional Machine Learning algorithms use statistics as their base. One of the first libraries you are introduced to in the world of Data Science using python - scikit-learn, is 100% based on nothing but pure statistics, and there is one thing about statistics: it can only be performed on a limited data. In the world of data lakes and big data, traditional Machine Learning is not used since data keeps coming and it works only on historical data.</p><p>Here comes the role of Deep Learning.</p><figure class="kg-card kg-image-card"></figure><p>Deep Learning is a Machine Learning algorithm that uses networks known as Artificial Neural Networks (ANN) that can solve any kind of requirement. In a statistical approach, accuracy becomes constant after a while but with deep learning accuracy keeps getting better with increase in data.</p><h3 id="what-are-artificial-neural-networks">What are Artificial Neural Networks?</h3><p>We as humans learn from experience. For example, human beings collect data from their 5 senses i.e. vision, smell, hearing, taste and touch. Suppose we have a cup of tea.</p><figure class="kg-card kg-image-card kg-card-hascaption"><amp-img src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwxMTc3M3wwfDF8c2VhcmNofDExfHx0ZWF8ZW58MHx8fHwxNjE3MDE2MzA1&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=2000" class="kg-image" alt width="3872" height="2592" srcset="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwxMTc3M3wwfDF8c2VhcmNofDExfHx0ZWF8ZW58MHx8fHwxNjE3MDE2MzA1&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=600 600w, https://images.unsplash.com/photo-1571934811356-5cc061b6821f?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwxMTc3M3wwfDF8c2VhcmNofDExfHx0ZWF8ZW58MHx8fHwxNjE3MDE2MzA1&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1000 1000w, https://images.unsplash.com/photo-1571934811356-5cc061b6821f?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwxMTc3M3wwfDF8c2VhcmNofDExfHx0ZWF8ZW58MHx8fHwxNjE3MDE2MzA1&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1600 1600w, https://images.unsplash.com/photo-1571934811356-5cc061b6821f?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwxMTc3M3wwfDF8c2VhcmNofDExfHx0ZWF8ZW58MHx8fHwxNjE3MDE2MzA1&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=2400 2400w" layout="responsive"></amp-img><figcaption>Photo by <a href="https://unsplash.com/@forleaves?utm_source=ghost&amp;utm_medium=referral&amp;utm_campaign=api-credit">Drew Jemmett</a> / <a href="https://unsplash.com/?utm_source=ghost&amp;utm_medium=referral&amp;utm_campaign=api-credit">Unsplash</a></figcaption></figure><p>From our senses we know that it is tea, as all of them have some information about tea that they have gained from experience by perceptions made by our senses.</p><p>Each one of the senses give some weightage like how much they believe it that it is a tea. This weight is initialized  by a weight initializer. A neuron will take this weightage from all the senses and upon activation will predict what the object is. </p><figure class="kg-card kg-image-card"></figure><p>A model consists of three layers: Input layer, Hidden layer and Output layer. The input layer has independent variables, the hidden layer has neurons and the output layer has the independent variables. If the input data is our 5 senses, then the output layer would be the cup of tea.</p><p>Increase in hidden layers will cause increase in accuracy but also increase in the use of resources which will of course - increase space and time complexity.</p><h2 id="industry-use-cases">Industry Use Cases</h2><p>The list of applications of neural networks is increasing as you read this. Few of them are face recognition, effect on insurance provision, encouraging repeat customs, financial services and much more. Lets dig into one of those: optimizing store layout.</p><h3 id="hm">H&amp;M</h3><figure class="kg-card kg-image-card kg-width-wide"></figure><p>The ability of neural networks to analyze and monitor stock levels makes it easier for companies to tell which products gets more sales. Based on this, the ones with lesser sales can be put on offer or placed at places most people are likely to check. Products usually purchased together can be put together to save customers' hassle and also to encourage newer customers to buy them together. This helps to prevent a backlog building in the warehouse.</p><p>According to <a href="https://www.forbes.com/sites/bernardmarr/2018/08/10/how-fashion-retailer-hm-is-betting-on-artificial-intelligence-and-big-data-to-regain-profitability/?sh=305932a65b00">Forbes</a>, <a href="http://localhost:2368/neural-networks-2/amp/hm.com">H&amp;M</a> are using ANNs to do such things like warehouse management and store layout.</p><p>Abandoning the one size fits all approach, H&amp;M are tailoring the product mix in their stores. For example, one of their stores in the residential Östermalm area of Stockholm originally sold basic products for everyone. After analyzing they identified that the majority of the store’s clients were women. Consequently, higher-priced items, as well as fashion items, sold far better than children’s or men’s products. This information helped them change the range of products in many of their stores. As well as reducing the menswear range, they brought in crockery ranges, a flower stall and a coffee shop. </p><p><a href="https://www.wsj.com/articles/h-m-pivots-to-big-data-to-spot-next-big-fast-fashion-trends-1525694400">The Wall Street Journal</a> reports</p><blockquote>By going for a more high-end look the store has improved its appeal and sales.</blockquote><p>According to H&amp;M this optimization has helped increase profit margins significantly.</p><p>Feel free to contact on my <a href="http://localhost:2368/neural-networks-2/amp/linkedin.com/in/bhaveshs6">LinkedIn</a>.</p><p></p>
+
+            </section>
+
+        </article>
+    </main>
+    <footer class="page-footer">
+        <h3>Sanatani</h3>
+            <p>Thoughts, stories and ideas.</p>
+        <p><a href="../../index.html">Read more posts →</a></p>
+        <a class="powered" href="https://ghost.org" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 156 156"><g fill="none" fill-rule="evenodd"><rect fill="#15212B" width="156" height="156" rx="27"/><g transform="translate(36 36)" fill="#F6F8FA"><path d="M0 71.007A4.004 4.004 0 014 67h26a4 4 0 014 4.007v8.986A4.004 4.004 0 0130 84H4a4 4 0 01-4-4.007v-8.986zM50 71.007A4.004 4.004 0 0154 67h26a4 4 0 014 4.007v8.986A4.004 4.004 0 0180 84H54a4 4 0 01-4-4.007v-8.986z"/><rect y="34" width="84" height="17" rx="4"/><path d="M0 4.007A4.007 4.007 0 014.007 0h41.986A4.003 4.003 0 0150 4.007v8.986A4.007 4.007 0 0145.993 17H4.007A4.003 4.003 0 010 12.993V4.007z"/><rect x="67" width="17" height="17" rx="4"/></g></g></svg> Published with Ghost</a>
+    </footer>
+    
+</body>
+</html>
